@@ -11,7 +11,9 @@ And I couldn't leave that thought behind.
 If you like StarTrek better, I apologize :)
 
 ## How to run this app
-Clone this repository  
+Clone this repository.  
+
+Create an .env file in the root directory and insert VITE_API_KEY=[your sandbox key]
   
 Run 
 ```
