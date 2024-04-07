@@ -1,4 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* You can add global styles to this file, and also import other style files */
+
+@layer base {
+    @font-face {
+        font-family: 'Roboto';
+        font-weight: 400;
+        src: url(/assets/fonts/Roboto-Regular.otf) format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Roboto';
+        font-weight: 700;
+        src: url(/assets/fonts/Roboto-Bold.otf) format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Roboto';
+        font-weight: 500;
+        src: url(/assets/fonts/Roboto-Medium.otf) format('opentype');
+    }
+
+
+    body {
+        @apply bg-gray-100 min-h-screen
+    }
+
+    .le-wrapper {
+        @apply font-sans text-base text-gray-800 max-w-4xl w-full mx-auto
+    }
+}
+
+@layer components {
+    .logo {
+        width: 63px;
+        height: 35px;
+        background-image: url(../src/assets/images/am.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center left;
+    }
+
+    .x-wing {
+        width: 46px;
+        height: 43px;
+        background-image: url(../src/assets/images/x-wing.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center right;
+    }
+}
+
+@layer utilities {
+
+    .table-cell {
+        @apply px-5 py-1 align-middle text-left
+    }
+
+    .table-cell.more-padding {
+        @apply py-3
+    }
+}

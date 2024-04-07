@@ -6,7 +6,12 @@
     {
       "files": ["*.ts", "*.tsx"],
       "extends": ["plugin:@nx/typescript"],
-      "rules": {}
+      "rules": {
+        "no-console": "off",
+        "indent": ["error", "tab", {"SwitchCase": 1}],
+        "comma-dangle": ["warn", "always-multiline"],
+        "quotes": [2, "single", { "avoidEscape": true }]
+      }
     },
     {
       "files": ["*.js", "*.jsx"],
