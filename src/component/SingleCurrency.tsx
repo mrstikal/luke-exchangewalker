@@ -39,8 +39,7 @@ const SingleCurrency = () => {
 	if (currency) {
 		const cm = currencyMap(currency);
 		const cmKeys = [...cm.keys()];
-		console.log('Currency loaded')
-		
+
 		return (
 			<div className="py-8 px-6">
 				<div

@@ -80,7 +80,6 @@ const Homepage = () => {
 	});
 	
 	if (dataset) {
-		console.log('Homepage loaded')
 		const dataSorted = new Map([...dataset.entries()]
 			.sort(function(a, b) {
 				return (a[0]).localeCompare(b[0]);
